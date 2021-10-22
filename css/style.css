@@ -31,7 +31,7 @@ html {
 .navbar p {
   font-size: 2rem;
   font-weight: 600;
-  color: red;
+  color: #ee6b3c;
   margin-bottom: 0.3rem;
 }
 
@@ -107,7 +107,8 @@ html {
   border: none;
   outline: none;
   font-size: 1.5rem;
-  border: 2px solid rgba(194, 194, 194, 0.123);
+  border-bottom: 2px solid rgba(194, 194, 194, 0.123);
+  padding-bottom: 0.3rem;
 }
 
 .section2 .top .sidebar__actions #setVolume {

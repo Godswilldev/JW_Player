@@ -29,7 +29,7 @@ html {
   p {
     font-size: 2rem;
     font-weight: 600;
-    color: red;
+    color: rgb(238, 107, 60);
     margin-bottom: 0.3rem;
   }
 
@@ -80,7 +80,8 @@ html {
         border: none;
         outline: none;
         font-size: 1.5rem;
-        border: 2px solid rgba(194, 194, 194, 0.123);
+        border-bottom: 2px solid rgba(194, 194, 194, 0.123);
+        padding-bottom: 0.3rem;
       }
       #setVolume {
         width: 30rem;
