@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/assets/play.png" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer async src="js/api.js"></script>
+    <script defer async src="js/index.js"></script>
+    <title>JW PLAYER</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="navbar">
+        <div class="navbar__brand">
+          <span>
+            <p>JW</p>
+            <h1>PLAYER</h1>
+          </span>
+
+          <div class="navbar__icons">
+            <img class="navbar__icon" src="/assets/shuffle-arrows.png" alt="" />
+            <img class="navbar__icon" src="/assets/play.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <section class="section2">
+        <div class="top">
+          <!-- Video Player goes here -->
+          <div class="video" id="video"></div>
+
+          <!-- Video Player actions from the api -->
+          <div class="sidebar">
+            <div class="sidebar__actions">
+              <div>
+                <label for="load">Load: </label>
+                <input
+                  type="text"
+                  placeholder="Load a new video Url"
+                  name="load"
+                  id="load"
+                />
+              </div>
+              <button class="btnLoad" type="submit">Load</button>
+            </div>
+
+            <div class="sidebar__actions">
+              <div>
+                <label for="width">Width: </label>
+                <input
+                  type="number"
+                  placeholder="Enter new Width"
+                  name="width"
+                  id="width"
+                />
+
+                <label for="height">Height: </label>
+                <input
+                  type="number"
+                  placeholder="Enter new Height"
+                  name="height"
+                  id="height"
+                />
+              </div>
+              <button class="btnResize" type="submit">Resize</button>
+            </div>
+
+            <div class="sidebar__actions">
+              <div>
+                <label for="setVolume">Set Volume: </label>
+                <input
+                  type="number"
+                  placeholder="Enter a value between 1 and 100"
+                  name="setVolume"
+                  id="setVolume"
+                />
+              </div>
+              <button class="btnSetVolume" type="submit">Set Volume</button>
+            </div>
+
+            <div class="sidebar__actions">
+              <div>
+                <label for="fullscreen">Set Fullscreen: </label>
+                <input type="checkbox" name="fullscreen" id="fullscreen" />
+              </div>
+            </div>
+
+            <div class="sidebar__actions">
+              <div>
+                <label for="setMute">Set Mute: </label>
+                <input type="checkbox" name="setMute" id="setMute" />
+              </div>
+            </div>
+
+            <div class="sidebar__actions">
+              <div>
+                <label for="setAutoPlay">Set AutoPlay: </label>
+                <input type="checkbox" name="setAutoPlay" id="setAutoPlay" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="output">
+            <input
+              placeholder="View Output Here"
+              name="output"
+              id="output"
+              value=""
+            />
+          </div>
+
+          <div class="buttons">
+            <div class="buttons__top">
+              <button id="play">Play</button>
+              <button id="pause">Pause</button>
+              <button id="getHeight">Get Height</button>
+              <button id="getWidth">Get Width</button>
+              <button id="getVol">Get Volume</button>
+            </div>
+            <br />
+            <div class="buttons__down">
+              <button id="getMute">Get Mute</button>
+              <button id="duration">Duration</button>
+              <button id="getPlaybackState">Get Playback State</button>
+              <button id="getViewability">Get Viewability</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

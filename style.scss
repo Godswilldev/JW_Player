@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(
+    to right,
+    rgba(10, 16, 39, 0.816),
+    rgba(0, 5, 43, 0.878)
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  height: 10rem;
+  p {
+    font-size: 2rem;
+    font-weight: 600;
+    color: red;
+    margin-bottom: 0.3rem;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 2.3;
+  }
+
+  &__brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__icon {
+    padding: 0 1rem;
+    width: 5rem;
+  }
+}
+.container {
+  padding: 5rem 10rem;
+  height: 100%;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .top {
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+    .sidebar__actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem 0;
+      label {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+      }
+
+      input {
+        background-color: transparent;
+        color: #fff;
+        border: none;
+        outline: none;
+        font-size: 1.5rem;
+        border: 2px solid rgba(194, 194, 194, 0.123);
+      }
+      #setVolume {
+        width: 30rem;
+      }
+    }
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+
+    .output {
+      margin: 1.5rem;
+      margin-left: 15rem;
+
+      input {
+        width: 20rem;
+        height: 5rem;
+        font-size: 2rem;
+        color: #fff;
+        background-color: transparent;
+        outline: none;
+        text-align: center;
+        border-radius: 0.5rem;
+        border: 2px solid rgba(194, 194, 194, 0.123);
+      }
+    }
+    .buttons {
+      button {
+        &:not(:first-child) {
+          margin: 0 1rem;
+        }
+      }
+    }
+  }
+  button {
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    background-color: rgba(204, 204, 204, 0.123);
+    box-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 5, 43, 0.878);
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
