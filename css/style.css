@@ -13,6 +13,48 @@ html {
   font-size: 62.5%;
 }
 
+@media only screen and (max-width: 160em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media only screen and (max-width: 90em) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  html {
+    font-size: 57.5%;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  html {
+    font-size: 52.5%;
+  }
+}
+
+@media only screen and (max-width: 30em) {
+  html {
+    font-size: 48.5%;
+  }
+}
+
+@media only screen and (max-width: 23.4375em) {
+  html {
+    font-size: 43.5%;
+  }
+}
+
+@media only screen and (max-width: 20em) {
+  html {
+    font-size: 38.5%;
+  }
+}
+
 .body {
   height: 100vh;
   width: 100%;
@@ -22,6 +64,12 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 64em) {
+  .body {
+    height: 100%;
+  }
 }
 
 .navbar {
@@ -62,6 +110,13 @@ html {
   height: 100%;
 }
 
+@media only screen and (max-width: 64em) {
+  .container {
+    padding: 3rem;
+    margin: 0 auto;
+  }
+}
+
 .section2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,6 +136,12 @@ html {
   display: grid;
   -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
+}
+
+@media only screen and (max-width: 64em) {
+  .section2 .top {
+    display: block;
+  }
 }
 
 .section2 .top .sidebar__actions {
@@ -113,6 +174,12 @@ html {
 
 .section2 .top .sidebar__actions #setVolume {
   width: 30rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .section2 .top .sidebar__actions #setVolume {
+    width: 25rem;
+  }
 }
 
 .section2 .video {
@@ -148,6 +215,15 @@ html {
 
 .section2 .bottom .buttons button:not(:first-child) {
   margin: 0 1rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .section2 .bottom .buttons br {
+    display: none;
+  }
+  .section2 .bottom .buttons button {
+    margin: 1rem;
+  }
 }
 
 .section2 button {
